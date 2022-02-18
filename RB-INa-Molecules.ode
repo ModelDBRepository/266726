@@ -46,8 +46,6 @@ di5/dt=i4*alpha*a-i5*4*beta*b+i6*delta-i5*gamma+c5*Con*a^4-i5*Coff*b^4
 di6/dt=i5*gamma-i6*delta+O*Oon-i6*Ooff
 
 INa=GNa*((o+ob)/(c1+c2+c3+c4+c5+o+ob+i1+i2+i3+i4+i5+i6))*(V-ENa)
-aux v=v
-aux Ina=ina
 @ meth=euler
 @ dt=1e-5, total=80, nout=100
 @ yp=INa, yhi=5, ylo=-50, xlo=0, xhi=80, maxstor=1000000, bounds=1000000000
